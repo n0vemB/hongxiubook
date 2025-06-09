@@ -57,7 +57,7 @@ python3 -m pip install selenium beautifulsoup4 requests fake-useragent tqdm
     脚本会提示你输入要下载的小说主页地址。请确保输入的是**小说的主页 URL**，例如：
 
     ```
-    请输入小说章节页地址 (例如: https://www.hongxiu.com/book/20912433708070004):
+    请输入小说章节页地址 (例如: https://www.hongxiu.com/chapterlist/20912433708070004):
     ```
     将小说的 URL 粘贴到终端中，然后按回车键。
 
