@@ -308,7 +308,7 @@ class HongxiuScraper:
 def main():
     scraper = HongxiuScraper()
 
-    novel_book_url = input("请输入小说主页地址 (例如: https://www.hongxiu.com/book/20912433708070004): ")
+    novel_book_url = input("请输入小说章节地址 (例如: https://www.hongxiu.com/chapterlist/20912433708070004): ")
     
     novel_info = scraper.get_novel_info(novel_book_url)
     novel_title = novel_info['title']
