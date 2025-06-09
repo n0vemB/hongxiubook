@@ -28,7 +28,7 @@
 python3 -m pip install selenium beautifulsoup4 requests fake-useragent tqdm
 ```
 
-### 安装 ChromeDriver
+### 安装 ChromeDriver（MAC系统）
 
 1.  访问 [ChromeDriver 官方下载页面]
    https://chromedriver.chromium.org/downloads
@@ -43,6 +43,25 @@ python3 -m pip install selenium beautifulsoup4 requests fake-useragent tqdm
     sudo mv chromedriver /usr/local/bin/
     ```
     （如果 `/usr/local/bin` 不存在，可以先用 `sudo mkdir -p /usr/local/bin` 创建。）
+
+### 安装 ChromeDriver（windows系统）
+
+   在 Windows 上设置 ChromeDriver，通常有两种方法：
+   1、将 chromedriver.exe 放到系统 PATH 目录中： 这是最推荐的方法，因为这样你就可以在任何位置运行脚本而不需要指定 ChromeDriver 的完整路径。
+   2、下载 chromedriver.exe 文件。
+   3、将 chromedriver.exe 文件移动到你的 Windows 系统 PATH 环境变量中的任何一个目录里。
+      常见的做法是放在：
+      C:\Windows (系统目录，需要管理员权限)
+      C:\Windows\System32 (系统目录，需要管理员权限)
+      或者你自己创建的一个目录，然后将这个目录添加到系统 PATH 环境变量中（例如 C:\selenium_drivers）。
+   4、如何添加目录到 PATH 环境变量（以 Windows 10/11 为例）：
+      - 在 Windows 搜索栏输入“环境变量”，然后选择“编辑系统环境变量”。
+      - 在“系统属性”窗口中，点击“环境变量”按钮。
+      - 在“系统变量”部分，找到名为 Path 的变量，然后点击“编辑”。
+      - 在“编辑环境变量”窗口中，点击“新建”，然后输入你存放 chromedriver.exe 的目录的完整路径（例如 C:\selenium_drivers）。
+      - 点击“确定”关闭所有窗口。
+      - 重要： 完成上述步骤后，关闭所有已打开的命令提示符或 PowerShell 窗口，然后重新打开一个新窗口，这样 PATH 环境变量的更改才会生效。
+
 
 ## 如何使用
 
